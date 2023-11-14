@@ -6,6 +6,9 @@ const { connectToDb, getDb } = require('./db')
 const app = express()
 app.use(express.json())
 
+var cors = require('cors');
+app.use(cors());
+
 // db connetion
 let db
 
